@@ -10,5 +10,5 @@ dependencies:
   - nltk=3.5
   - scikit-learn=0.23.2
   - conda-env-conda-forge
-  - conda-forge: :imbalanced-learn
+  - conda install -c conda-forge imbalanced-learn
   - pip=23.0.1
