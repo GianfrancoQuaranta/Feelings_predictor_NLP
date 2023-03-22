@@ -1,7 +1,7 @@
 name: stats
 channels: 
-  -conda-forge
-  -defaults
+  - conda-forge
+  - defaults
 
 dependencies:
   - conda=23.1.0
@@ -13,4 +13,5 @@ dependencies:
   - nltk=3.5
   - scikit-learn=0.23.2
   - imbalanced-learn
+  - scipy=1.5.2
   - pip=23.0.1
