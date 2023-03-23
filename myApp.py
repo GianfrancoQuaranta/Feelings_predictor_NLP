@@ -9,6 +9,8 @@ import sklearn
 import imblearn 
 import pickle
 
+nltk.download("punkt")
+
 
 # Import own modules;
 from modules import CrearSentiment 
