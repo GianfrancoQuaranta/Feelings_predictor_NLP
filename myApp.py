@@ -58,13 +58,13 @@ if button:
     if prediction[0] == 0:
 
         st.write(prediction_text)
-        st.write('Nuestro super predictor detectó que tu comentario puede ser representado con el siguiente emoji: contentx :unamused:')
+        st.write('Nuestro super predictor detectó que tu comentario puede ser representado con el siguiente emoji: contentx :wink:')
         # st.write(':unamused:')
 
     elif prediction[0] == 1:
 
         st.write(prediction_text)
-        st.write('Nuestro super predictor detectó que tu comentario puede ser representado con el siguiente emoji: enojado :wink:')
+        st.write('Nuestro super predictor detectó que tu comentario puede ser representado con el siguiente emoji: enojado :unamused:')
 
 
 
