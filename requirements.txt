@@ -1,5 +1,4 @@
 conda
-python
 pandas
 numpy
 seaborn
