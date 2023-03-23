@@ -53,7 +53,7 @@ if button:
     # Test data;
     prediction = model_1.predict(pd.DataFrame.from_dict({'Summary': [summary], 'Text': [text]}))
 
-    prediction_text = 'Para realizar las predicciones hemos desarrollado un algoritmo que ha sido entrenado con 50 mil datos reales de Amazon, el mejor score obtenido es de 0.95.'
+    prediction_text = 'Para realizar las predicciones hemos desarrollado un algoritmo que ha sido entrenado con 426340 mil datos reales de Amazon, el mejor score obtenido es de 0.95.'
 
     if prediction[0] == 0:
 
