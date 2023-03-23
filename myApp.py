@@ -23,8 +23,12 @@ from modules import Stemmer_English
 
 # ----------------------------------------------
 
-# Import and define variable model with pickle;
-with open('./model_prueba.pkl', 'rb') as model:
+# Import and define variable model with pickle, model_prueba.pkl;
+# with open('./model_prueba.pkl', 'rb') as model:
+#     model_1 = pickle.load(model)
+
+# Import and define variable model with pickle, model_prueba.pkl;
+with open('./best_model.pkl', 'rb') as model:
     model_1 = pickle.load(model)
 
 # Título de la página;
@@ -37,7 +41,7 @@ st.write('Para que la predicción de los sentimientos del comentario sea exitosa
 summary = st.text_input(label='Título de tu review.', placeholder='Ingresa el título de tu review.', label_visibility='hidden')
 
 # Prueba text area component;
-text = st.text_area(label='Comentario', placeholder='Ingresa tu comentario desarrollado.', max_chars=30, label_visibility='hidden')
+text = st.text_area(label='Comentario', placeholder='Ingresa tu comentario desarrollado.', max_chars=200, label_visibility='hidden')
 
 # Agrego un botón para que al darle click, hacer la predicción;
 button = st.button('Predict')
@@ -49,18 +53,18 @@ if button:
     # Test data;
     prediction = model_1.predict(pd.DataFrame.from_dict({'Summary': [summary], 'Text': [text]}))
 
-    prediction_text = 'Para realizar las predicciones hemos desarrollado un algoritmo que ha sido entrenado con 50 mil datos reales de Amazon, el mejor score obtenido es de 0.92'
+    prediction_text = 'Para realizar las predicciones hemos desarrollado un algoritmo que ha sido entrenado con 50 mil datos reales de Amazon, el mejor score obtenido es de 0.95'
 
     if prediction[0] == 0:
 
         st.write(prediction_text)
-        st.write('Nuestro super predictor detectó que tu comentario puede ser representado con el siguiente emoji: :unamused:')
+        st.write('Nuestro super predictor detectó que tu comentario puede ser representado con el siguiente emoji: contentx :unamused:')
         # st.write(':unamused:')
 
     elif prediction[0] == 1:
 
         st.write(prediction_text)
-        st.write('Nuestro super predictor detectó que tu comentario puede ser representado con el siguiente emoji: :wink:')
+        st.write('Nuestro super predictor detectó que tu comentario puede ser representado con el siguiente emoji: enojado :wink:')
 
 
 
