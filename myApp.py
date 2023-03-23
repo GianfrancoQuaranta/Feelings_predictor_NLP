@@ -53,18 +53,18 @@ if button:
     # Test data;
     prediction = model_1.predict(pd.DataFrame.from_dict({'Summary': [summary], 'Text': [text]}))
 
-    prediction_text = 'Para realizar las predicciones hemos desarrollado un algoritmo que ha sido entrenado con 50 mil datos reales de Amazon, el mejor score obtenido es de 0.95'
+    prediction_text = 'Para realizar las predicciones hemos desarrollado un algoritmo que ha sido entrenado con 50 mil datos reales de Amazon, el mejor score obtenido es de 0.95.'
 
     if prediction[0] == 0:
 
         st.write(prediction_text)
-        st.write('Nuestro super predictor detectó que tu comentario puede ser representado con el siguiente emoji: :wink:.')
+        st.write('Nuestro super predictor detectó que tu comentario puede ser representado con el siguiente emoji: :wink:')
         # st.write(':unamused:')
 
     elif prediction[0] == 1:
 
         st.write(prediction_text)
-        st.write('Nuestro super predictor detectó que tu comentario puede ser representado con el siguiente emoji: :unamused:.')
+        st.write('Nuestro super predictor detectó que tu comentario puede ser representado con el siguiente emoji: :unamused:')
 
 
 
