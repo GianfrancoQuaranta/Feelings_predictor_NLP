@@ -8,7 +8,6 @@ import nltk
 import sklearn
 import imblearn 
 import pickle
-from streamlit_player import st_player
 
 
 # Import own modules;
