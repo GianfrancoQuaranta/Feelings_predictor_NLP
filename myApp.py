@@ -41,7 +41,7 @@ st.write('Para que la predicción de los sentimientos del comentario sea exitosa
 summary = st.text_input(label='Título de tu review.', placeholder='Ingresa el título de tu review.', label_visibility='hidden')
 
 # Prueba text area component;
-text = st.text_area(label='Comentario', placeholder='Ingresa tu comentario desarrollado.', max_chars=200, label_visibility='hidden')
+text = st.text_area(label='Comentario', placeholder='Ingresa tu comentario desarrollado.', max_chars=5000, label_visibility='hidden')
 
 # Agrego un botón para que al darle click, hacer la predicción;
 button = st.button('Predict')
@@ -53,7 +53,7 @@ if button:
     # Test data;
     prediction = model_1.predict(pd.DataFrame.from_dict({'Summary': [summary], 'Text': [text]}))
 
-    prediction_text = 'Para realizar las predicciones hemos desarrollado un algoritmo que ha sido entrenado con 426340 mil datos reales de Amazon, el mejor score obtenido es de 0.95.'
+    prediction_text = 'Para realizar las predicciones hemos desarrollado un algoritmo que ha sido entrenado con 426340 mil datos reales de Amazon, el mejor score obtenido es de 0.96.'
 
     if prediction[0] == 0:
 
