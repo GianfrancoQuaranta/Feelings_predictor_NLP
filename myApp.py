@@ -34,14 +34,18 @@ with open('./best_model.pkl', 'rb') as model:
 # Título de la página;
 st.title("Feelings predictor NLP")
 
+prediction_text = 'Our algorithm was trained with 426.340 real Amazon product reviews. The model is 96% accurate with a 82% recall.';
+
+st.write(prediction_text)
+
 # Seteo una explicación de la página;
-st.write('Para que la predicción de los sentimientos del comentario sea exitosa, rellena, en inglés, el primer campo con el título del comentario, y en el segundo, un texto de comentario más desarrollado.')
+st.write('For a successfull sentiment prediction, please fill in a summary of the product review in the first field, and a detailed product review in the second field.')
 
 # Prueba input review summary; 
-summary = st.text_input(label='Título de tu review.', placeholder='Ingresa el título de tu review.', label_visibility='hidden')
+summary = st.text_input(label='Summary ', placeholder='Summary.', label_visibility='hidden')
 
 # Prueba text area component;
-text = st.text_area(label='Comentario', placeholder='Ingresa tu comentario desarrollado.', max_chars=5000, label_visibility='hidden')
+text = st.text_area(label='Detailed product review', placeholder='Detailed product review', max_chars=5000, label_visibility='hidden')
 
 # Agrego un botón para que al darle click, hacer la predicción;
 button = st.button('Predict')
@@ -53,18 +57,12 @@ if button:
     # Test data;
     prediction = model_1.predict(pd.DataFrame.from_dict({'Summary': [summary], 'Text': [text]}))
 
-    prediction_text = 'Para realizar las predicciones hemos desarrollado un algoritmo que ha sido entrenado con 426340 mil datos reales de Amazon, el mejor score obtenido es de 0.96.'
-
     if prediction[0] == 0:
-
-        st.write(prediction_text)
-        st.write('Nuestro super predictor detectó que tu comentario puede ser representado con el siguiente emoji: :wink:')
+        st.write('Our super sentiment analysis algorithm predicts that your product review is: :wink:')
         # st.write(':unamused:')
 
     elif prediction[0] == 1:
-
-        st.write(prediction_text)
-        st.write('Nuestro super predictor detectó que tu comentario puede ser representado con el siguiente emoji: :unamused:')
+        st.write('Our super sentiment analysis algorithm predicts that your product review is: :unamused:')
 
 
 
