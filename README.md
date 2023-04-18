@@ -6,7 +6,7 @@
 * **Integrantes:**
   - Eleonora Tubio. ([LinkedIn]());
   - Francisco Portas. ([LinkedIn](https://www.linkedin.com/in/francisco-portas/));
-  - Juan Rojo. ([LinkedIn]());
+  - Juan Rojo. ([LinkedIn](https://www.linkedin.com/in/juan-rojo));
   - María Pía Rodriguez Buteler. ([LinkedIn]());
   - Quaranta Gianfranco Enzo. ([LinkedIn](https://www.linkedin.com/in/gianfranco-quaranta-/));
 
