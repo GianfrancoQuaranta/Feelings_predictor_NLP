@@ -47,5 +47,5 @@ Realizamos el deploy del modelo en [streamlit](https://streamlit.io/) para que p
 
 
 
-- **Conclusión**
+- **Conclusión:**
 Objetivo cumplido, se ha logrado un excelente trabajo en equipo, integrador aprobado y reconocido como uno de los mejores de nuestra comisión.
