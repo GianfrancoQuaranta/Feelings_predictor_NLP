@@ -10,7 +10,7 @@
   - María Pía Rodriguez Buteler. ([LinkedIn]());
   - Quaranta Gianfranco Enzo. ([LinkedIn](https://www.linkedin.com/in/gianfranco-quaranta-/));
 
-- **Dataset**
+- **Dataset:**
 Algoritmo entrenado con un dataset de 426.340 registros de reviews de Amazon, el mismo se encuentra disponible en el siguiente link:
 
   - Link: [Dataset](https://www.kaggle.com/datasets/arhamrumi/amazon-product-reviews?resource=download)
@@ -36,7 +36,7 @@ Con una hipótesis nula de 85.5%.
 
 Logramos una mejora considerable de 10.5%.
 
-- **Deploy**
+- **Deploy:**
 Realizamos el deploy del modelo en [streamlit](https://streamlit.io/) para que pueda ser utilizado libremente.
 
 ![Imagen de Ejemplo](./public/img/feelings_predictor_dh_tp_final_screen.png)
