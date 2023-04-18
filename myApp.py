@@ -32,7 +32,7 @@ with open('./best_model.pkl', 'rb') as model:
     model_1 = pickle.load(model)
 
 # Título de la página;
-st.title("Feelings predictor NLP")
+st.title("Feelings Predictor NLP")
 
 prediction_text = 'Our algorithm was trained with 426.340 real Amazon product reviews. The model is 96% accurate with a 82% recall.';
 
