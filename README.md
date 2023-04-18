@@ -5,7 +5,7 @@
 
 * **Integrantes:**
   - Eleonora Tubio. ([LinkedIn]());
-  - Francisco Portas. ([LinkedIn]());
+  - Francisco Portas. ([LinkedIn](https://www.linkedin.com/in/francisco-portas/));
   - Juan Rojo. ([LinkedIn]());
   - María Pía Rodriguez Buteler. ([LinkedIn]());
   - Quaranta Gianfranco Enzo. ([LinkedIn](https://www.linkedin.com/in/gianfranco-quaranta-/));
@@ -32,9 +32,9 @@ Predecimos con un 96% de precisión y un 82% de recall, si el comentario ingresa
   - Positivo: 3 o más estrellas.
   - Negativo:  de 1 a 2 estrellas.
 
-Con una hipótesis nula de ...%.
+Con una hipótesis nula de 85.5%.
 
-Logramos una mejora considerable de ...%.
+Logramos una mejora considerable de 10.5%.
 
 - **Deploy**
 Realizamos el deploy del modelo en [streamlit](https://streamlit.io/) para que pueda ser utilizado libremente.
@@ -44,3 +44,8 @@ Realizamos el deploy del modelo en [streamlit](https://streamlit.io/) para que p
 
 * **Pruébalo tu mismo:**
   * Link: [Feelinks Predictor App NLP.](https://gianfrancoquaranta-feelings-predictor-nlp-myapp-tj44k7.streamlit.app/) 
+
+
+
+- **Conclusión**
+Objetivo cumplido, se ha logrado un excelente trabajo en equipo, integrador aprobado y reconocido como uno de los mejores de nuestra comisión.
